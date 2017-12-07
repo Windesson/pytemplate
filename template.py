@@ -97,9 +97,11 @@ def load_custom_filter(env):
                     temp = imp.load_source(
                         filename.replace('.py', ''), new_module
                     )
-                    for k, v in temp.filter_module().iteritems():
+                    OBJFilter = temp.FilterModule()
+                    for k, v in OBJFilter.filters().iteritems():
                         env.filters[k] = v
-            except Exception:
+            except Exception as e:
+                print e
                 pass
 
 

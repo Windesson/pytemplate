@@ -7,6 +7,8 @@ def ipadd(ip, key=""):
 
     return ip
 
-def filter_module():
-    return {'ipadd': ipadd}
+
+class FilterModule(object):
+    def filters(self):
+        return {'ipadd': ipadd}
 
