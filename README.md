@@ -21,7 +21,7 @@ From the python console, run:
         mask 24
 
 
-From the terminal, run (Option1):
+From the terminal, run:
 
     >python template.py -h
     usage: template.py [-h] template [yamls [yamls ...]]
