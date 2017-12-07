@@ -1,0 +1,6 @@
+
+hostname {{hostname}}
+interface vlan {{vlan.number}}
+    description {{vlan.description}}
+    ip {{vlan.ip | ipadd('network')}}
+    mask {{vlan.ip | ipadd('mask')}}
