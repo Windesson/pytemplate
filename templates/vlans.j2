@@ -2,5 +2,5 @@
 hostname {{hostname}}
 interface vlan {{vlan.number}}
     description {{vlan.description}}
-    ip {{vlan.ip | ipadd('network')}}
-    mask {{vlan.ip | ipadd('mask')}}
+    ip {{vlan.ip | ipaddr('address')}}
+    mask {{vlan.ip | ipaddr('netmask')}}

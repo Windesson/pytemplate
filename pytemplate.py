@@ -3,13 +3,12 @@ import yaml
 import os
 import argparse
 import imp
-import sys
 
 """
 A python2 program to emulate Ansible's template module
 """
 
-BASE_DIR = os.getcwd()
+BASE_DIR = os.path.dirname(__file__)
 DEFAULT_TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 DEFAULT_CUSTOM_FILTER_DIR = os.path.join(BASE_DIR, 'filter_plugins')
 DEFAULT_VARS_DIR = os.path.join(BASE_DIR, 'host_vars')
