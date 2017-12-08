@@ -2,6 +2,9 @@ Simple PyTemplate
 ------------
 Simple PyTemplate is a script build in Python 2.7 to emulate Ansible's template module.
 
+Required Software
+------------------
+pip install netaddr, jinja2
 
 Getting Started
 ---------------------
@@ -18,8 +21,7 @@ From the python console, run:
     interface vlan 100
         description data vlan
         ip 192.168.1.1
-        mask 24
-
+        mask 255.255.255.0
 
 From the terminal, run:
 
@@ -42,6 +44,6 @@ From the terminal, run:
     interface vlan 100
         description data vlan
         ip 192.168.1.1
-        mask 24
+        mask 255.255.255.0
 
 
